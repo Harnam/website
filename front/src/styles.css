@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+.compo {
+    height: 95%
+}
+.compo-red{
+    background-color: red;
+}
+.compo-green{
+    background-color: green;
+}
+.compo-blue{
+    background-color: blue;
+}
+.compo-yellow{
+    background-color: yellow;
+}
+body{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'bebas';
+    src: url('./assets/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('./assets/bebasneue-regular-webfont.woff') format('woff'),
+         url('./assets/bebasneue-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0); /* IE */
+    background: rgba(0, 0, 0, 0); /* NON-IE */
+}
+.navbar.scrolled.blacky{
+    color:black;
+}

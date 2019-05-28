@@ -9,6 +9,9 @@ import { ContactComponent } from './contact/contact.component';
 import { BottomComponent } from './bottom/bottom.component';
 import { PageComponent } from './page/page.component';
 import { ErrComponent } from './err/err.component';
+import { AboutComponent } from './about/about.component';
+import { ProjectComponent } from './project/project.component';
+import { SocialComponent } from './social/social.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ErrComponent } from './err/err.component';
     ContactComponent,
     BottomComponent,
     PageComponent,
-    ErrComponent
+    ErrComponent,
+    AboutComponent,
+    ProjectComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,
