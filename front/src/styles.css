@@ -38,6 +38,10 @@ body{
     background: rgba(0, 0, 0, 0); /* IE */
     background: rgba(0, 0, 0, 0); /* NON-IE */
 }
-.navbar.scrolled.blacky{
-    color:black;
+.active{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+.uhh.active{
+    text-decoration: none;
 }

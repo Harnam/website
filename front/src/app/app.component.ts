@@ -39,11 +39,11 @@ export class AppComponent {
       if($(window).scrollTop() > startY){
           $('.navbar').addClass("scrolled");
           $('.navbar').removeClass("bg-dark");
-          $('.nav-link').addClass("blacky");
+          $('.nav-link').css("color", "black");
       }else{
           $('.navbar').addClass("bg-dark");
           $('.navbar').removeClass("scrolled");
-          $('.nav-link').removeClass("blacky");
+          $('.nav-link').css("color", "rgba(255,255,255,.5)");
       }
     }
   
