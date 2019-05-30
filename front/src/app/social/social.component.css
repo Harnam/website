@@ -1,0 +1,12 @@
+.icon {
+    font-size: 70px;
+}
+.point{
+    text-decoration: none;
+}
+.point:hover .icon { 
+    transform: scale(1.8);
+}
+.point .icon {
+    transition: 0.1s;
+}
