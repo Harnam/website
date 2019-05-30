@@ -1,3 +1,43 @@
-<p style="height: 1700px;">
-  contact works!
-</p>
+<div style="background: black;" class="container-fluid">
+  <br /><br>
+  <h1 style="text-align: center">Contact Me</h1><br />
+  <form ngNativeValidate>
+    <div class="row">
+      <div class="col-lg-2 col-xl-2 col-md-2 col-sm-1 col-xs-1"></div>
+      <div class="form-group col-xl-8 col-lg-8 col-md-8 col-sm-10 col-xs-10">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control sendy" [(ngModel)]="form.name" name="name" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 col-xl-2 col-md-2 col-sm-1 col-xs-1"></div>
+      <div class="form-group col-xl-8 col-lg-8 col-md-8 col-sm-10 col-xs-10">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control sendy" [(ngModel)]="form.email" name="email" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-2 col-xl-2 col-md-2 col-sm-1 col-xs-1"></div>
+      <div class="form-group col-xl-8 col-lg-8 col-md-8 col-sm-10 col-xs-10">
+        <label for="subject">Subject:</label>
+        <input type="text" class="form-control sendy" [(ngModel)]="form.subject" name="subject" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-2 col-xl-2 col-md-2 col-sm-1 col-xs-1"></div>
+        <div class="form-group col-xl-8 col-lg-8 col-md-8 col-sm-10 col-xs-10">
+          <label for="body">Body:</label>
+          <textarea cols="5" rows="10"class="form-control sendy" [(ngModel)]="form.body" name="body" required></textarea>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 col-xl-2 col-md-2 col-sm-1 col-xs-1"></div>
+      <div class="form-group col-xl-8 col-lg-8 col-md-8 col-sm-10 col-xs-10">
+        <button type="submit" (click)="formsubmit();" style="width: 100%; font-size: 27px; background: red;" class="btn sendy">Send</button>
+      </div>
+    </div>
+  </form>
+  <br><br>
+</div>

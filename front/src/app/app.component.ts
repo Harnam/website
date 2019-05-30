@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import * as $ from '../../node_modules/jquery';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'front';
   public ngOnInit()
@@ -39,7 +41,22 @@ export class AppComponent {
       if($(window).scrollTop() > startY){
           $('.navbar').addClass("scrolled");
           $('.navbar').removeClass("bg-dark");
-          $('.nav-link').css("color", "black");
+          if($('.connav').hasClass('active')){
+            //console.log("Contact nav active");
+            $('.nav-link').css("color", "rgba(255,255,255)");
+          } else if($('.abonav').hasClass('active')){
+            //console.log("About nav active");
+            $('.nav-link').css("color", "black");
+          } else if($('.socnav').hasClass('active')){
+            //console.log("Social nav active");
+            $('.nav-link').css("color", "red");
+          } else if($('.pronav').hasClass('active')){
+            //console.log("Project nav active");
+            $('.nav-link').css("color", "green");
+          }  else if($('.mainav').hasClass('active')){
+            //console.log("Main nav active");
+            $('.nav-link').css("color", "blue");
+          }
       }else{
           $('.navbar').addClass("bg-dark");
           $('.navbar').removeClass("scrolled");

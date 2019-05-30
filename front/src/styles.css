@@ -1,18 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-.compo {
-    height: 95%
-}
-.compo-red{
-    background-color: red;
-}
-.compo-green{
-    background-color: green;
-}
-.compo-blue{
-    background-color: blue;
-}
-.compo-yellow{
-    background-color: yellow;
+app-contact{
+    color: white;
 }
 body{
     scroll-behavior: smooth;
@@ -41,6 +29,10 @@ body{
 .active{
     text-decoration: underline;
     text-decoration-color: red;
+}
+.nav-link:hover{
+    text-decoration: underline;
+    text-decoration-color: gray; 
 }
 .uhh.active{
     text-decoration: none;
