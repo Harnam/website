@@ -1,0 +1,12 @@
+.bottom {
+   position:absolute;
+   bottom:0;
+   height:60px;
+   font-size: 22px;
+}
+.text{
+    text-align: center;
+}
+.tops{
+    float:right;
+}

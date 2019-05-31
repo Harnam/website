@@ -10,3 +10,9 @@
 .point .icon {
     transition: 0.1s;
 }
+.vertical-center {
+    position: relative;
+    top: 30%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
