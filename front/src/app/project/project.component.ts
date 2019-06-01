@@ -35,13 +35,13 @@ export class ProjectComponent implements OnInit {
       used: "Unity",
       link: [
       {
+        logo: "youtube",
+        title: "Game Trailer",
+        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      }, {
         logo: "amazon",
         title: "Amazon Appstore",
         link: "https://www.amazon.com/Harnam-Creator/dp/B078K55CXH/"
-      },{
-        logo: "",
-        title: "",
-        link: ""
       }],
       back: "#1C1C1BFF"
     },
