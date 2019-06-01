@@ -42,19 +42,19 @@ export class AppComponent {
           $('.navbar').addClass("scrolled");
           $('.navbar').removeClass("bg-dark");
           if($('.connav').hasClass('active')){
-            //console.log("Contact nav active");
+            $('.active').css("text-decoration-color", "rgba(255,255,255)");
             $('.nav-link').css("color", "rgba(255,255,255)");
           } else if($('.abonav').hasClass('active')){
-            //console.log("About nav active");
+            $('.active').css("text-decoration-color", "black");
             $('.nav-link').css("color", "black");
           } else if($('.socnav').hasClass('active')){
-            //console.log("Social nav active");
+            $('.active').css("text-decoration-color", "red");
             $('.nav-link').css("color", "red");
           } else if($('.pronav').hasClass('active')){
-            //console.log("Project nav active");
-            $('.nav-link').css("color", "green");
+            $('.active').css("text-decoration-color", "#FEE715FF");
+            $('.nav-link').css("color", "#FEE715FF");
           }  else if($('.mainav').hasClass('active')){
-            //console.log("Main nav active");
+            $('.active').css("text-decoration-color", "blue");
             $('.nav-link').css("color", "blue");
           }
       }else{
