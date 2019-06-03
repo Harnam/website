@@ -19,12 +19,14 @@ export class ProjectComponent implements OnInit {
       link: [{
         logo: "github",
         title: "Source Code",
-        link: "https://github.com/Harnam/SumoGame"
+        link: "https://github.com/Harnam/SumoGame",
+        hid: false
       },
       {
         logo: "amazon",
         title: "Amazon Appstore",
-        link: "https://www.amazon.com/Harnam-M-S-G/dp/B077L6M6NL/"
+        link: "https://www.amazon.com/Harnam-M-S-G/dp/B077L6M6NL/",
+        hid: false
       }],
       back: "#00B1D2FF"
     },
@@ -37,11 +39,13 @@ export class ProjectComponent implements OnInit {
       {
         logo: "youtube",
         title: "Game Trailer",
-        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        hid: false
       }, {
         logo: "amazon",
         title: "Amazon Appstore",
-        link: "https://www.amazon.com/Harnam-Creator/dp/B078K55CXH/"
+        link: "https://www.amazon.com/Harnam-Creator/dp/B078K55CXH/",
+        hid: false
       }],
       back: "#1C1C1BFF"
     },
@@ -53,12 +57,14 @@ export class ProjectComponent implements OnInit {
       link: [{
         logo: "github",
         title: "Source Code",
-        link: "https://github.com/Harnam/X_Plore-Source"
+        link: "https://github.com/Harnam/X_Plore-Source",
+        hid: false
       },
       {
         logo: "amazon",
         title: "Amazon Appstore",
-        link: "https://www.amazon.com/Harnam-X_Plore/dp/B078Q8RM9F/"
+        link: "https://www.amazon.com/Harnam-X_Plore/dp/B078Q8RM9F/",
+        hid: false
       }],
       back: "#F2AA4CFF"
     },
@@ -70,11 +76,13 @@ export class ProjectComponent implements OnInit {
       link: [{
         logo: "github",
         title: "Source Code",
-        link: "https://github.com/Harnam/website"
+        link: "https://github.com/Harnam/website",
+        hid: false
       },{
         logo: "",
         title: "",
-        link: ""
+        link: "",
+        hid: true
       }],
       back: "#2BAE66FF"
     }

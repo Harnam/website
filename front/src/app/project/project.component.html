@@ -1,11 +1,11 @@
-<div  style="background: #F93822FF; min-height: 695px;" class="container-fluid">
+<div  style="background: #F93822FF;" class="container-fluid tootless">
   <br><br>
   <h1 style="text-align: center">Projects</h1><br />
   <div class="row vertical-center">
     <div *ngFor="let pro of projects" [style.background]="pro.back" style="color:white;" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
       <div class="row align-items-center">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-          <img width="100%" src="../../assets/{{pro.img}}">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 proimgs">
+          <img class="proimg" src="../../assets/{{pro.img}}">
         </div>
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding-top: 12px;">
           <h1>{{pro.name}}</h1>
@@ -14,7 +14,9 @@
           <hr>
           <p>Used: {{pro.used}}</p>
           <hr>
-          <p *ngFor="let link of pro.link"><a href="{{link.link}}" target="_blank"><i class="fa fa-{{link.logo}}"></i>&nbsp;&nbsp;&nbsp;{{link.title}}</a></p>
+          <p *ngFor="let link of pro.link"  [ngClass]="{hideit : link.hid}"><a href="{{link.link}}" target="_blank">
+            <i class="fa fa-{{link.logo}}"></i>&nbsp;&nbsp;&nbsp;{{link.title}}</a>
+          </p>
         </div>
       </div>
     </div>

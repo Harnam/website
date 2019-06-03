@@ -14,3 +14,49 @@ p{
 hr {
     border-color: white;
 }
+
+.tootless {
+    min-height: 960px;
+}
+@media only screen and (max-width: 930px) {
+    .vertical-center{
+        top: 38%;
+    }
+    .tootless{
+        min-height: 1000px;
+    }
+    @media only screen and (max-width: 767px) {
+    .tootless {
+        min-height: 800px;
+    }
+    .vertical-center {
+        top: -16%;
+    }
+
+    @media only screen and (max-width: 575px) {
+        .tootless{
+            min-height: 2700px;
+        }
+        .vertical-center{
+            top: 45%;
+        }
+        }
+
+    .hideit{
+        display: none;
+    }
+    }
+}
+.proimg{
+    width: 100%;
+}
+
+@media only screen and (max-width: 575px) {
+    .proimg{
+        width: 50%;
+        padding-top: 10px;
+    }
+    .proimgs{
+        text-align: center;
+    }
+}
