@@ -37,16 +37,16 @@ export class AppComponent {
     });
     function checkScroll(){
       var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
-  
       if($(window).scrollTop() > startY){
+        if(document.documentElement.clientWidth > 575){
           $('.navbar').addClass("scrolled");
           $('.navbar').removeClass("bg-dark");
           if($('.connav').hasClass('active')){
             $('.active').css("text-decoration-color", "rgba(255,255,255)");
             $('.nav-link').css("color", "rgba(255,255,255)");
           } else if($('.abonav').hasClass('active')){
-            $('.active').css("text-decoration-color", "black");
-            $('.nav-link').css("color", "black");
+            $('.active').css("text-decoration-color", "cyan");
+            $('.nav-link').css("color", "cyan");
           } else if($('.socnav').hasClass('active')){
             $('.active').css("text-decoration-color", "red");
             $('.nav-link').css("color", "red");
@@ -54,13 +54,18 @@ export class AppComponent {
             $('.active').css("text-decoration-color", "#FEE715FF");
             $('.nav-link').css("color", "#FEE715FF");
           }  else if($('.mainav').hasClass('active')){
-            $('.active').css("text-decoration-color", "blue");
-            $('.nav-link').css("color", "blue");
+            $('.active').css("text-decoration-color", "#606060FF");
+            $('.nav-link').css("color", "#606060FF");
           }
-      }else{
+        } else {
           $('.navbar').addClass("bg-dark");
           $('.navbar').removeClass("scrolled");
           $('.nav-link').css("color", "rgba(255,255,255,.5)");
+        }
+      }else{
+        $('.navbar').addClass("bg-dark");
+        $('.navbar').removeClass("scrolled");
+        $('.nav-link').css("color", "rgba(255,255,255,.5)");
       }
     }
   
