@@ -1,0 +1,9 @@
+.vertical-center {
+    position: relative;
+    top: 32%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+li {
+    list-style-type: none;
+}

@@ -34,7 +34,7 @@ export class ContactComponent implements OnInit {
       $('button.sendy').css('background', 'white');
       $('button.sendy').html('<img src="../../assets/gif.gif" height="27px" width="27px">');
       console.log(this.form);
-      return this.httpClient.post("http://localhost:3000/send-email", this.form).subscribe((res: any) => {
+      return this.httpClient.post("https://harnam-in.glitch.me//send-email", this.form).subscribe((res: any) => {
         if(res.status == "sent"){
           this.showsent();
         } else if(res.status == "error"){

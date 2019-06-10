@@ -12,10 +12,8 @@ export class SocialComponent implements OnInit {
 
   ngOnInit() {
     $('.container-fluid').css('height', document.documentElement.clientHeight);
-    $('.bottom').css('width', 0.92 * document.documentElement.clientWidth);
     $(window).resize(function () {
       $('.container-fluid').css('height', document.documentElement.clientHeight);
-      $('.bottom').css('width', 0.92 * document.documentElement.clientWidth);
     });
   }
 
