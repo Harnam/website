@@ -44,18 +44,23 @@ export class AppComponent {
           if($('.connav').hasClass('active')){
             $('.active').css("text-decoration-color", "rgba(255,255,255)");
             $('.nav-link').css("color", "rgba(255,255,255)");
+            $('.heada').css("fill", "rgba(255,255,255)");
           } else if($('.abonav').hasClass('active')){
-            $('.active').css("text-decoration-color", "cyan");
-            $('.nav-link').css("color", "cyan");
+            $('.active').css("text-decoration-color", "rgb(0, 68, 255)");
+            $('.nav-link').css("color", "rgb(0, 68, 255)");
+            $('.heada').css("fill", "rgb(0, 68, 255)");
           } else if($('.socnav').hasClass('active')){
             $('.active').css("text-decoration-color", "red");
             $('.nav-link').css("color", "red");
+            $('.heada').css("fill", "red");
           } else if($('.pronav').hasClass('active')){
             $('.active').css("text-decoration-color", "#FEE715FF");
             $('.nav-link').css("color", "#FEE715FF");
+            $('.heada').css("fill", "#FEE715FF");
           }  else if($('.mainav').hasClass('active')){
-            $('.active').css("text-decoration-color", "#606060FF");
-            $('.nav-link').css("color", "#606060FF");
+            $('.active').css("text-decoration-color", "#F95700FF");
+            $('.nav-link').css("color", "#F95700FF");
+            $('.heada').css("fill", "#F95700FF");
           }
         } else {
           $('.navbar').addClass("bg-dark");
@@ -63,6 +68,11 @@ export class AppComponent {
           $('.nav-link').css("color", "rgba(255,255,255,.5)");
         }
       }else{
+        if($('.navbar').hasClass('bg-dark')){
+          $('.heada').css("fill", "#F95700FF");
+        } else {
+          $('.heada').css("fill", "red");
+        }
         $('.navbar').addClass("bg-dark");
         $('.navbar').removeClass("scrolled");
         $('.nav-link').css("color", "rgba(255,255,255,.5)");
