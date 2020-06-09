@@ -1,0 +1,20 @@
+.vertical-center {
+    display: inherit;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+h1 {
+    font-size: 75px;
+}
+hr{
+    max-width: 250px;
+    border-top: solid 5px;
+}.imghover:hover{
+    transform: scale(1.2);
+}
+.imghover{
+    transition: 0.1s;
+}

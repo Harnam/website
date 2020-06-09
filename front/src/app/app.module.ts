@@ -13,7 +13,8 @@ import { AboutComponent } from './about/about.component';
 import { ProjectComponent } from './project/project.component';
 import { SocialComponent } from './social/social.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ByeComponent } from './bye/bye.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http'
     ErrComponent,
     AboutComponent,
     ProjectComponent,
-    SocialComponent
+    SocialComponent,
+    ByeComponent
   ],
   imports: [
     BrowserModule,
