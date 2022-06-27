@@ -71,7 +71,7 @@ export class ProjectComponent implements OnInit {
     {
       name: "Harnam.in",
       img: "weblogo.png",
-      des: "A simple offline two player multiplayer sumo wrestling game with character customization.",
+      des: "Version 2 of my personal website available at harnam.in",
       used: "NodeJs, ExpressJs, AngularJs",
       link: [{
         logo: "github",
